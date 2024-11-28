@@ -9,7 +9,7 @@ A .dll patch to bypass the adware bundled with Zango Games
 
    *!! Do NOT run the setup on your main machine, as it will install Zango components !!*
 
-- Download the bypass, extract **"run-game.bat"** and **"zango" folder** to the game folder
+- [Download the bypass](https://github.com/RavenDS/Zango-Bypass/archive/refs/heads/main.zip), extract **"run-game.bat"** and **"zango" folder** to the game folder
 
 - **Edit "run-game.bat"** with Notepad, and replace the line **"YOUR GAME EXECUTABLE.exe"**
 
