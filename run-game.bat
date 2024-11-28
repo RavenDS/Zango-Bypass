@@ -30,5 +30,3 @@ reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\zango" /f
 
 echo Registry keys deleted.
-
-pause
