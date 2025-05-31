@@ -41,15 +41,7 @@ echo Folder copied successfully!
 :: Adding registry keys
 echo Importing registry keys for Zango...
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}" /ve /t REG_SZ /d "ZangoInstaller Class" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\InprocServer32" /ve /t REG_SZ /d "%DestinationFolder%\ZangoInstaller.dll" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\InprocServer32" /v "ThreadingModel" /t REG_SZ /d "Apartment" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\MiscStatus" /ve /t REG_SZ /d "0" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\MiscStatus\1" /ve /t REG_SZ /d "132497" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\ProgID" /ve /t REG_SZ /d "ZangoInstaller.ZangoInstaller.1" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\ToolboxBitmap32" /ve /t REG_SZ /d "%DestinationFolder%\ZangoInstaller.dll, 101" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\TypeLib" /ve /t REG_SZ /d "{FF0312E0-F60C-4109-94B8-0A564A58E43B}" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\Version" /ve /t REG_SZ /d "1.0" /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\VersionIndependentProgID" /ve /t REG_SZ /d "ZangoInstaller.ZangoInstaller" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\WOW6432Node\CLSID\{99410CDE-6F16-42ce-9D49-3807F78F0287}\InprocServer32" /ve /t REG_SZ /d "%DestinationFolder%\ZangoInstaller.exe" /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\zango" /v "did" /t REG_SZ /d "2393" /f
 echo Registry keys for Zango have been temporarily imported.
 echo -------------------------
